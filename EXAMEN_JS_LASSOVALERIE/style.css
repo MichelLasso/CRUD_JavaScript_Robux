@@ -1,0 +1,136 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+@font-face {
+    font-family: titulo;
+    src: url(fonts/roblox_2017_font.ttf);
+}
+.titulo{
+    font-family: titulo;
+    font-size: 5rem;
+    margin-top: 2vw;
+}
+.logo{
+    width: 6vw;
+}
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#cont, #cont2{
+    display: flex;
+    padding: 2vw 5vw ;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+.cantidad{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+#cont2{
+    flex-direction: column;
+}
+#total{
+    display: flex;
+    padding: 1vw;
+    gap: 20px;
+}
+h1{
+    font-family: titulo;
+}
+h2, button{
+    width: 2vw;
+    text-align: center;
+    background-color: black;
+    border-radius: 50%;
+    color: white;
+    padding: 0.5vw;
+    border: none;
+}
+.pagar{
+    width: 9vw;
+    border-radius: 0;
+}
+button:hover{
+    transform: scale(1.2);
+    cursor: pointer;
+}
+#mostrarRobux{
+    background-color: #d6d6d6;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 1vw;
+    box-shadow: 1px 3px 3px black;
+}
+#mostrarRobux:hover{
+    transform: scale(1.1);
+}
+.informacionVenta{
+    font-family: sans-serif;
+    text-align: center;
+    padding-bottom: 0.5vw;
+    flex-wrap: wrap;
+}
+.precio{
+    width: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    font-family: titulo;
+}
+.carrito{
+    width: 2vw;
+    cursor: pointer;
+}
+header{
+    width: 96.7vw;
+    padding: 1vw;
+    background-color: #d6d6d6;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    z-index: 1;
+    border-bottom: 2px solid black;
+}
+img:hover{
+    transform: scale(1.2);
+}
+.menu{
+    width: 2vw;
+}
+
+/*Responsive para celulares*/
+@media screen and (max-width: 768px) {
+    .titulo{
+        font-size: 4rem;
+        margin-top: 8vw;
+    }
+    
+    button{
+        padding: 4vw;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 3vw;
+        height: 5vw;
+        font-size: 1.5rem;
+    }
+    .logo{
+        width: 18vw;
+    }
+    .menu{
+        width: 10vw;
+    }
+    footer{
+        margin-top: 10vw;
+    }
+}
